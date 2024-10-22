@@ -1,12 +1,10 @@
 This repository accompanies the paper " **Machine Learning Nonadiabatic Dynamics: Eliminating Phase Freedom of Nonadiabatic Couplings with the State-Interaction State-Averaged Spin-Restricted Ensemble-Referenced Kohn–Sham Approach** " by Sung Wook Moon, Soohaeng Yoo Willow, Tae Hyeon Park, Seung Kyu Min, and Chang Woo Myung.
 
-* ```Data/``` contains inputs and outputs of 1) Geometry relaxation, 2) Density of states (DOS), and 3) Improved dimer calculation of MoS2 passivation by the substituted thiolbenzene (TB) molecules (PFBT, 4-ABT, 4-MBT, 4-FBT). Also, contains inputs and outputs of 4) Dipole moment, 5) Electron density, and 6) Molecular electrostatic potential calculations of the TB molecules.
-  * To calculate dipole moment, electron density, and molecular electrostatic potential of TB molecules, you can use ```Data/DipoleMoment_MEP/*/dipole_moment.py```
-  * For example,
-    ```
-    python dipole_moment.py PFBT.xyz > PFBT.out
-    ```
-  * Some of the outputs were uploaded as compressed (.zip) files because the data is huge. (DOSCAR, density.cube, and mep.cube).
+* ```Data/``` contains inputs and outputs for 1) Training a Machine Learning Potential model on the PPS, OSS, Delta_sq dataset, 2) Testing on the Delta_sq dataset using different activation functions. It also contains inputs and outputs for 3) Benchmarking based on the number of layers and feature channels.
+  * To train and predict with PPS and OSS datasets, you can use ```python -m bam_mol.training.trainer``` and ```python -m bam_mol.predicting.predictor``` in run.sh
+  * To train and predict with Delta_sq datasets, you can use ```python -m bam_del.training.trainer``` and ```python -m bam_del.predicting.predictor``` in run.sh
+  * Datasets were uploaded as compressed (.zip) files because the data is huge. (psb3_delta_sq_train_lattice.traj, psb3_pps_train_lattice.traj, psb3_oss_train_lattice.traj).
+
 
 ## Paper abstarct
 
