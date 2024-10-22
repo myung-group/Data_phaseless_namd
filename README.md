@@ -1,8 +1,8 @@
 This repository accompanies the paper " **Machine Learning Nonadiabatic Dynamics: Eliminating Phase Freedom of Nonadiabatic Couplings with the State-Interaction State-Averaged Spin-Restricted Ensemble-Referenced Kohn–Sham Approach** " by Sung Wook Moon, Soohaeng Yoo Willow, Tae Hyeon Park, Seung Kyu Min, and Chang Woo Myung.
 
 * ```Data/``` contains inputs and outputs for 1) Training a Machine Learning Potential model on the PPS, OSS, Delta_sq dataset, 2) Testing on the Delta_sq dataset using different activation functions. It also contains inputs and outputs for 3) Benchmarking based on the number of layers and feature channels.
-  * To train and predict with PPS and OSS datasets, you can use ```python -m bam_mol.training.trainer``` and ```python -m bam_mol.predicting.predictor``` in run.sh
-  * To train and predict with Delta_sq datasets, you can use ```python -m bam_del.training.trainer``` and ```python -m bam_del.predicting.predictor``` in run.sh
+  * To train and predict with PPS and OSS datasets, you can use ```python -m bam_mol.training.trainer``` and ```python -m bam_mol.predicting.predictor```
+  * To train and predict with Delta_sq datasets, you can use ```python -m bam_del.training.trainer``` and ```python -m bam_del.predicting.predictor```
   * Datasets were uploaded as compressed (.zip) files because the data is huge. (psb3_delta_sq_train_lattice.traj, psb3_pps_train_lattice.traj, psb3_oss_train_lattice.traj).
 
 
